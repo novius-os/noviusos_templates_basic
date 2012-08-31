@@ -9,9 +9,9 @@
  */
 ?>
 <div id="footer">
-	<ul id="footer_menu" class="nobullet">
-		<li><a href="">Legal informations</a></li>
-		<li><a href="">Site Map</a></li>
-		<li><a href="">Rights reserved</a></li>
-	</ul>
+    <ul id="footer_menu" class="nobullet">
+        <li><a href="">Legal informations</a></li>
+        <li><a href="">Site Map</a></li>
+        <li><a href="">Rights reserved</a></li>
+    </ul>
 </div>

@@ -19,10 +19,10 @@ $config = \Nos\Templates\Basic\loadViewConfig();
 <!--[if IE 9 ]>    <html class="ie ie9 lte9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
 <head>
-	<!-- META -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- META -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!-- CSS -->
+    <!-- CSS -->
     <link rel="shortcut icon" href="static/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="static/apps/noviusos_templates_basic/css/base.css" media="all">
     <link rel="stylesheet" type="text/css" href="static/apps/noviusos_templates_basic/css/left_menu.css" media="all">
@@ -34,30 +34,30 @@ $config = \Nos\Templates\Basic\loadViewConfig();
 
 <body>
 
-	<div id="globalwrapper">
+    <div id="globalwrapper">
 
-		<div id="globalcontainer">
+        <div id="globalcontainer">
 
-    		<?= \View::forge('noviusos_templates_basic::subviews/header', $config["global"]); ?>
+            <?= \View::forge('noviusos_templates_basic::subviews/header', $config["global"]); ?>
 
-    		<div id="content">
-    			<div id="colleft" class="noprint">
-        			<div class="vertical_menu">
-        			    <?= \View::forge('noviusos_templates_basic::subviews/menu', $config["menu"]); ?>
-        			</div>
-    			</div>
-    			<div id="colright">
-    				<h1 id="pagename"><?= $title ?></h1>
+            <div id="content">
+                <div id="colleft" class="noprint">
+                    <div class="vertical_menu">
+                        <?= \View::forge('noviusos_templates_basic::subviews/menu', $config["menu"]); ?>
+                    </div>
+                </div>
+                <div id="colright">
+                    <h1 id="pagename"><?= $title ?></h1>
                     <?= $wysiwyg['content'] ?>
-				</div>
-				<div class="clearfloat"></div>
+                </div>
+                <div class="clearfloat"></div>
             </div>
 
             <?= \View::forge('noviusos_templates_basic::subviews/footer'); ?>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 
 </body>
 </html>

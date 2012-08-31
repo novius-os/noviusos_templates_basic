@@ -9,5 +9,5 @@
  */
 ?>
 <div id="header" class="noprint">
-	<a id="sitename"><?= $sitename ?></a>
+    <a id="sitename"><?= $sitename ?></a>
 </div>

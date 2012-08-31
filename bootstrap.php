@@ -14,8 +14,10 @@
 
 namespace Nos\Templates\Basic;
 
-function loadViewConfig() {
+function loadViewConfig()
+{
     \Config::load('noviusos_templates_basic::template', 'template');
     $config = \Config::get('template');
+
     return $config;
 }
