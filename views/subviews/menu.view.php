@@ -18,36 +18,36 @@ if ($depth > 0) {
     $current = \Nos\Nos::main_controller()->getPage()->page_id;
 
     if (count($pages)) {
-?>
-    <ul class="nobullet" id="menu">
-<?php
+        ?>
+        <ul class="nobullet" id="menu">
+        <?php
         foreach ($pages as $p) {
-?>
-        <li class="lvl0"><a <?= $p->get_link() ?><?= $current == $p['id'] ? ' class="active"' : '' ?>><?= $p->pick('menu_title', 'title') ?></a>
-<?php
+            ?>
+            <li class="lvl0"><a <?= $p->get_link() ?><?= $current == $p['id'] ? ' class="active"' : '' ?>><?= $p->pick('menu_title', 'title') ?></a>
+            <?php
             if ($depth > 1) {
                 $subpages = findPages($p['id']);
                 if (count($subpages)) {
-?>
-            <ul class="nobullet submenu">
-<?php
+                    ?>
+                    <ul class="nobullet submenu">
+                    <?php
                     foreach ($subpages as $sp) {
-?>
-                <li class="lvl1"><a <?= $sp->get_link() ?><?= $current == $sp['id'] ? ' class="active"' : '' ?>><?= $sp->pick('menu_title', 'title') ?></a>
-<?php
+                        ?>
+                        <li class="lvl1"><a <?= $sp->get_link() ?><?= $current == $sp['id'] ? ' class="active"' : '' ?>><?= $sp->pick('menu_title', 'title') ?></a>
+                        <?php
                     }
-?>
-            </ul>
-<?php
+                    ?>
+                    </ul>
+                    <?php
                 }
             }
-?>
-        </li>
-<?php
+            ?>
+            </li>
+            <?php
         }
-?>
-    </ul>
-<?php
+        ?>
+        </ul>
+        <?php
     }
 }
 
@@ -66,9 +66,9 @@ function findPages($idParent = null)
         'order_by'          => array('page_sort' => 'asc')
     ));
 
-    if(count($pages))
-
+    if (count($pages)) {
         return $pages;
-    else
+    } else {
         return array();
+    }
 }
