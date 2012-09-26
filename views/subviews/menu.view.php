@@ -9,7 +9,7 @@
  */
 
 // $depth : profondeur d'affichage des sous menus
-// $idParent : Niveau de départ
+// $idParent : Niveau de dï¿½part
 
 if ($depth > 0) {
     $pages = array();
@@ -57,7 +57,7 @@ function findPages($idParent = null)
         'page_parent_id'    => $idParent,
         'page_published'    => 1,
         'page_menu'		    => 1,
-        'page_lang'			=> \Nos\Nos::main_controller()->getPage()->page_lang,
+        'page_site'			=> \Nos\Nos::main_controller()->getPage()->page_site,
     );
 
     $pages = array();
