@@ -57,7 +57,7 @@ function findPages($idParent = null)
         'page_parent_id'    => $idParent,
         'page_published'    => 1,
         'page_menu'		    => 1,
-        'page_site'			=> \Nos\Nos::main_controller()->getPage()->page_site,
+        'page_context'			=> \Nos\Nos::main_controller()->getPage()->page_context,
     );
 
     $pages = array();
