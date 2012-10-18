@@ -23,7 +23,7 @@ if ($depth > 0) {
         <?php
         foreach ($pages as $p) {
             ?>
-            <li class="lvl0"><a <?= $p->get_link() ?><?= $current == $p['id'] ? ' class="active"' : '' ?>><?= $p->pick('menu_title', 'title') ?></a>
+            <li class="lvl0"><a <?= $p->link() ?><?= $current == $p['id'] ? ' class="active"' : '' ?>><?= $p->pick('menu_title', 'title') ?></a>
             <?php
             if ($depth > 1) {
                 $subpages = findPages($p['id']);
@@ -33,7 +33,7 @@ if ($depth > 0) {
                     <?php
                     foreach ($subpages as $sp) {
                         ?>
-                        <li class="lvl1"><a <?= $sp->get_link() ?><?= $current == $sp['id'] ? ' class="active"' : '' ?>><?= $sp->pick('menu_title', 'title') ?></a>
+                        <li class="lvl1"><a <?= $sp->link() ?><?= $current == $sp['id'] ? ' class="active"' : '' ?>><?= $sp->pick('menu_title', 'title') ?></a>
                         <?php
                     }
                     ?>
