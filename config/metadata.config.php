@@ -10,7 +10,7 @@
 
 return array(
     'name'    => 'Novius OS Basic Templates',
-    'version' => '0.1',
+    'version' => '0.2',
     'provider' => array(
         'name' => 'Novius OS',
     ),
