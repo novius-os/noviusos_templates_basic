@@ -61,7 +61,7 @@ function findPages($idParent = null)
     );
 
     $pages = array();
-    $pages = \Nos\Model_Page::find('all', array(
+    $pages = \Nos\Page\Model_Page::find('all', array(
         'where'             => $where,
         'order_by'          => array('page_sort' => 'asc')
     ));
