@@ -13,5 +13,6 @@
         <li><a href="">Legal informations</a></li>
         <li><a href="">Site Map</a></li>
         <li><a href="">Rights reserved</a></li>
+        <li><a href="http://www.novius-os.org" target="_blank">Powered by Novius OS</a></li>
     </ul>
 </div>
