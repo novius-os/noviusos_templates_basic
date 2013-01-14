@@ -22,7 +22,7 @@ return array(
     'templates' => array(
         'top_menu' => array(
             'file' => 'noviusos_templates_basic::top_menu',
-            'title' => 'Default template with a top menu',
+            'title' => 'Default template (top menu)',
             'cols' => 1,
             'rows' => 1,
             'layout' => array(
@@ -32,7 +32,7 @@ return array(
         ),
         'left_menu' => array(
             'file' => 'noviusos_templates_basic::left_menu',
-            'title' => 'Default template with a left menu',
+            'title' => 'Default template (left menu)',
             'cols' => 1,
             'rows' => 1,
             'layout' => array(

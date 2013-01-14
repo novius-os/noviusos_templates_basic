@@ -13,7 +13,7 @@ return array(
         "sitename" => "Novius OS Dev"
     ),
     'menu' => array(
-        "depth" => 2,        // depth of the menu (1 is only one level deep without sublevels)
+        "depth" => 2,        // depth of the menu (1 = one level deep only, no sublevels)
         "idParent" => null   // start level, null for root (default)
     )
 );

@@ -8,8 +8,9 @@
  * @link http://www.novius-os.org
  */
 
-// $depth : profondeur d'affichage des sous menus
-// $idParent : Niveau de d�part
+// $depth and $idParent set in template.config
+// $depth: depth of the menu (1 = one level deep only, no sublevels)
+// $idParent: start level, null for root (default)
 
 if ($depth > 0) {
     $pages = array();
