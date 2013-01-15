@@ -86,7 +86,7 @@ p:last-child {
     margin-bottom   : 0;
 }
 
-img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video {
+img, table, td, blockquote, code, pre, textarea, input, object, embed, video {
     max-width       : 100%;
     height          : auto;
 }
