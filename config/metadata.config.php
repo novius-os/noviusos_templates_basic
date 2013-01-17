@@ -9,12 +9,13 @@
  */
 
 return array(
-    'name'    => 'Novius OS Basic Templates',
+    'name'    => 'Novius OS default templates',
     'version' => '0.2',
     'provider' => array(
         'name' => 'Novius OS',
     ),
     'namespace' => 'Nos\Templates\Basic',
+    'i18n_file' => 'noviusos_templates_basic::metadata',
     'launchers' => array(
     ),
     'enhancers' => array(
