@@ -21,7 +21,7 @@ return array(
     'enhancers' => array(
     ),
     'templates' => array(
-        'top_menu' => array(
+        'noviusos_top_menu' => array(
             'file' => 'noviusos_templates_basic::top_menu',
             'title' => 'Default template (top menu)',
             'cols' => 1,
@@ -31,7 +31,7 @@ return array(
             ),
             'module' => '',
         ),
-        'left_menu' => array(
+        'noviusos_left_menu' => array(
             'file' => 'noviusos_templates_basic::left_menu',
             'title' => 'Default template (left menu)',
             'cols' => 1,
