@@ -6,13 +6,13 @@
 // 12 out of 12 words are translated (100%).
 
 return array(
-    #. Overwritten
+    #: metadata
     'Novius OS default templates' => 'Gabarits par défaut de Novius OS',
 
-    #. Overwritten
+    #: metadata
     'Default template (top menu)' => 'Gabarit par défaut (menu en haut)',
 
-    #. Overwritten
+    #: metadata
     'Default template (left menu)' => 'Gabarit par défaut (menu à gauche)',
 
 );
