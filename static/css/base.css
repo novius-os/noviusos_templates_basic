@@ -159,6 +159,14 @@ input, button, select {
 
 }
 
+#content #page_contexts {
+    font-size: 0.8em;
+}
+#content #page_contexts span {
+    font-style: italic;
+}
+
+
 /* Header */
 /*--------*/
 
@@ -168,9 +176,19 @@ input, button, select {
 	display         : inline-block;
 }
 
+#header {
+    position: relative;
+}
 #header a, #header a:hover {
     color           : #ffffff;
     text-decoration : none;
+}
+
+#header #contexts {
+    position        : absolute;
+    top : 0px;
+    right: 0px;
+    font-size: 0.8em;
 }
 
 /* Content */

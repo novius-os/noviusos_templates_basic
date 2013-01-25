@@ -38,22 +38,23 @@ $config = \Nos\Templates\Basic\loadViewConfig();
 
         <div id="globalcontainer">
 
-            <?= \View::forge('noviusos_templates_basic::subviews/header', $config["global"]); ?>
+            <?= \View::forge('noviusos_templates_basic::subviews/header', $config["global"] + array('current_context' => $page->get_context())) ?>
 
             <div id="content">
                 <div id="colleft" class="noprint">
                     <div class="vertical_menu">
-                        <?= \View::forge('noviusos_templates_basic::subviews/menu', $config["menu"]); ?>
+                        <?= \View::forge('noviusos_templates_basic::subviews/menu', $config["menu"]) ?>
                     </div>
                 </div>
                 <div id="colright">
+                    <?= \View::forge('noviusos_templates_basic::subviews/page_contexts', array('page' => $page), false) ?>
                     <h1 id="pagename"><?= $title ?></h1>
                     <?= $wysiwyg['content'] ?>
                 </div>
                 <div class="clearfloat"></div>
             </div>
 
-            <?= \View::forge('noviusos_templates_basic::subviews/footer'); ?>
+            <?= \View::forge('noviusos_templates_basic::subviews/footer') ?>
 
         </div>
 
