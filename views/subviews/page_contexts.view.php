@@ -12,8 +12,10 @@
 $others_contexts = $page->find_other_context();
 $links = array();
 foreach ($others_contexts as $page_context) {
-    $context = $page_context->get_context();
-    $links[] = '<a '.$page_context->link().'>'.\Nos\Tools_Context::contextLabel($context).'</a>';
+    if ($page_context->published()) {
+        $context = $page_context->get_context();
+        $links[] = '<a '.$page_context->link().'>'.\Nos\Tools_Context::contextLabel($context).'</a>';
+    }
 }
 if (!empty($links)) {
     echo '<div id="page_contexts"><span>This page exist in other context:</span> ', implode(' | ', $links), '</div>';
