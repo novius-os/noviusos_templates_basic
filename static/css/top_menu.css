@@ -25,6 +25,7 @@
 }
 
 .horizontal_menu ul.submenu {
+    background      : #fff;
 	position        : absolute;
 	display         : none;
 }

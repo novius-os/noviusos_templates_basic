@@ -9,19 +9,19 @@
  */
 ?>
 <div id="header" class="noprint">
-    <a id="sitename"><?= $sitename ?></a>
-<?php
+    <a id="sitename" href="<?=\Nos\Tools_Url::context(\Nos\Nos::main_controller()->getPage()->get_context()) ?>"><?= $sitename ?></a>
+    <?php
 // Display a switch to others contexts home page
-$contexts = \Nos\Tools_Context::contexts();
-$links = array();
-foreach (array_keys($contexts) as $i => $context) {
-    if ($context === $current_context) {
-        continue;
+    $contexts = \Nos\Tools_Context::contexts();
+    $links = array();
+    foreach (array_keys($contexts) as $i => $context) {
+        if ($context === $current_context) {
+            continue;
+        }
+        $links[] = '<a href="'.\Nos\Tools_Url::context($context).'">'.\Nos\Tools_Context::contextLabel($context).'</a>';
     }
-    $links[] = '<a href="'.\Nos\Tools_Url::context($context).'">'.\Nos\Tools_Context::contextLabel($context).'</a>';
-}
-if (!empty($links)) {
-    echo '<div id="contexts">', implode(' | ', $links), '</div>';
-}
-?>
+    if (!empty($links)) {
+        echo '<div id="contexts">', implode(' | ', $links), '</div>';
+    }
+    ?>
 </div>

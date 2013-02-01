@@ -38,12 +38,12 @@ $config = \Nos\Templates\Basic\loadViewConfig();
 
         <div id="globalcontainer">
 
-            <?= \View::forge('noviusos_templates_basic::subviews/header', $config["global"] + array('current_context' => $page->get_context())) ?>
+            <?= \View::forge('noviusos_templates_basic::subviews/header', $config['global'] + array('current_context' => $page->get_context())) ?>
 
             <div id="content">
                 <div id="colleft" class="noprint">
                     <div class="vertical_menu">
-                        <?= \View::forge('noviusos_templates_basic::subviews/menu', $config["menu"]) ?>
+                        <?= \View::forge('noviusos_templates_basic::subviews/menu', $config['menu']) ?>
                     </div>
                 </div>
                 <div id="colright">

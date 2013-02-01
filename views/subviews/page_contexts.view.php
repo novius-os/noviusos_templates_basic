@@ -8,6 +8,8 @@
  * @link http://www.novius-os.org
  */
 
+Nos\I18n::current_dictionary('noviusos_templates_basic::common');
+
 // Display a switch to others contexts twin with the current page
 $others_contexts = $page->find_other_context();
 $links = array();
@@ -18,5 +20,9 @@ foreach ($others_contexts as $page_context) {
     }
 }
 if (!empty($links)) {
-    echo '<div id="page_contexts"><span>This page exist in other context:</span> ', implode(' | ', $links), '</div>';
+    ?>
+<div id="page_contexts"><span><?= strtr(__('This page also exists in: {{contexts}}'), array(
+    '{{contexts}}' => implode(' | ', $links),
+)); ?></span></div>
+<?php
 }

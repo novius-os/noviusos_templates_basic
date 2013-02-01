@@ -8,12 +8,14 @@
  * @link http://www.novius-os.org
  */
 
+Nos\I18n::current_dictionary('noviusos_templates_basic::common');
+
 return array(
     'global' => array(
-        "sitename" => "Novius OS Dev"
+        'sitename' => __('My super website'),
     ),
     'menu' => array(
-        "depth" => 2,        // depth of the menu (1 = one level deep only, no sublevels)
-        "idParent" => null   // start level, null for root (default)
-    )
+        'depth' => 2,        // depth of the menu (1 = one level deep only, no sublevels)
+        'idParent' => null   // start level, null for root (default)
+    ),
 );
