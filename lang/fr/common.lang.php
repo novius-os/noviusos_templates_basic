@@ -5,5 +5,5 @@ return array(
     'Footer link' => 'Lien de bas de page',
     'Another footer link' => 'Un autre lien de bas de page',
     'Powered by Novius OS' => 'Propulsé par Novius OS',
-    'This page also exists in: {{contexts}}' => 'Cette page est également disponible en&nbp;: {{contexts}}',
+    'This page also exists in: {{contexts}}' => 'Cette page est également disponible en&nbsp;: {{contexts}}',
 );

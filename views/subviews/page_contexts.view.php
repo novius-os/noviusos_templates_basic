@@ -21,8 +21,8 @@ foreach ($others_contexts as $page_context) {
 }
 if (!empty($links)) {
     ?>
-<div id="page_contexts"><span><?= strtr(__('This page also exists in: {{contexts}}'), array(
-    '{{contexts}}' => implode(' | ', $links),
-)); ?></span></div>
-<?php
+    <div id="page_contexts"><span><?= strtr(__('This page also exists in: {{contexts}}'), array(
+        '{{contexts}}' => implode(' | ', $links),
+    )); ?></span></div>
+    <?php
 }
