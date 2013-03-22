@@ -21,7 +21,6 @@ $config = \Nos\Templates\Basic\loadViewConfig();
 <head>
     <!-- META -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- CSS -->
     <link rel="shortcut icon" href="static/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="static/apps/noviusos_templates_basic/css/base.css" media="all">
