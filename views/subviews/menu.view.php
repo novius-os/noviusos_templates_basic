@@ -55,19 +55,18 @@ if ($depth > 0) {
 function findPages($idParent = null)
 {
     $where = array(
-        'page_parent_id'    => $idParent,
-        'page_published'    => 1,
-        'page_menu'		    => 1,
-        'page_context'			=> \Nos\Nos::main_controller()->getPage()->page_context,
+        'page_parent_id' => $idParent,
+        'published'      => 1,
+        'page_menu'      => 1,
+        'page_context'   => \Nos\Nos::main_controller()->getPage()->page_context,
     );
 
-    $pages = array();
     $pages = \Nos\Page\Model_Page::find('all', array(
         'where'             => $where,
         'order_by'          => array('page_sort' => 'asc')
     ));
 
-    if (count($pages)) {
+    if (count($pages) > 0) {
         return $pages;
     } else {
         return array();
