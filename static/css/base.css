@@ -136,7 +136,7 @@ input, button, select {
 	width           : auto
 } /* @bugfix for IE8 */
 
-@import url("mediaprint.css");
+@import url("print.css");
 
 /* Global containers */
 /*-------------------*/
