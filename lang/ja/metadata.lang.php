@@ -1,15 +1,15 @@
 <?php
 
-// Generated on 25/06/2013 11:06:52
+// Generated on 05/07/2013 14:57:58
 
-// 0 out of 3 messages are translated (0%).
-// 0 out of 12 words are translated (0%).
+// 3 out of 3 messages are translated (100%).
+// 12 out of 12 words are translated (100%).
 
 return array(
-    'Novius OS default templates' => '',
+    'Novius OS default templates' => 'Novius OS デフォルトテンプレート',
 
-    'Default template (top menu)' => '',
+    'Default template (top menu)' => 'デフォルトテンプレート（上にメニュー）',
 
-    'Default template (left menu)' => '',
+    'Default template (left menu)' => 'デフォルトテンプレート（左にメニュー）',
 
 );
