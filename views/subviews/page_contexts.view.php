@@ -16,7 +16,7 @@ $links = array();
 foreach ($others_contexts as $page_context) {
     if ($page_context->published()) {
         $context = $page_context->get_context();
-        $links[] = '<a '.$page_context->link().'>'.\Nos\Tools_Context::contextLabel($context).'</a>';
+        $links[] = $page_context->htmlAnchor(array('text' => \Nos\Tools_Context::contextLabel($context)));
     }
 }
 if (!empty($links)) {

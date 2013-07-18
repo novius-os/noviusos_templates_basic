@@ -23,32 +23,24 @@ if ($depth > 0) {
         <ul class="nobullet" id="menu">
         <?php
         foreach ($pages as $p) {
-            ?>
-            <li class="lvl0"><a <?= $p->link() ?><?= $current == $p['id'] ? ' class="active"' : '' ?>><?= $p->pick('menu_title', 'title') ?></a>
-            <?php
+            $anchor = array('text' => e($p->pick('menu_title', 'title')));
+            $current == $p['id'] && $anchor['class'] = 'active';
+            echo '<li class="lvl0">', $p->htmlAnchor($anchor);
             if ($depth > 1) {
                 $subpages = findPages($p['id']);
                 if (count($subpages)) {
-                    ?>
-                    <ul class="nobullet submenu">
-                    <?php
+                    echo '<ul class="nobullet submenu">';
                     foreach ($subpages as $sp) {
-                        ?>
-                        <li class="lvl1"><a <?= $sp->link() ?><?= $current == $sp['id'] ? ' class="active"' : '' ?>><?= $sp->pick('menu_title', 'title') ?></a>
-                        <?php
+                        $anchor = array('text' => e($sp->pick('menu_title', 'title')));
+                        $current == $sp['id'] && $anchor['class'] = 'active';
+                        echo '<li class="lvl1">', $sp->htmlAnchor($anchor), '</li>';
                     }
-                    ?>
-                    </ul>
-                    <?php
+                    echo '</ul>';
                 }
             }
-            ?>
-            </li>
-            <?php
+            echo '</li>';
         }
-        ?>
-        </ul>
-        <?php
+        echo '</ul>';
     }
 }
 
