@@ -39,7 +39,7 @@ $config = \Nos\Templates\Basic\loadViewConfig();
 
             <?= \View::forge('noviusos_templates_basic::subviews/header', $config['global'] + array('current_context' => $page->get_context())) ?>
 
-<?
+<?php
 if ($type_menu === 'left') {
     $view = 'noviusos_templates_basic::subviews/left_body';
 } else {
