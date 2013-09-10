@@ -8,9 +8,9 @@
  * @link http://www.novius-os.org
  */
 
-$view = \View::forge('noviusos_templates_basic::template');
-$view->set('type_menu', 'left', false);
-$view->set('page', $page, false);
-$view->set('title', $title, false);
-$view->set('wysiwyg', $wysiwyg, false);
-echo $view;
+echo \View::forge('noviusos_templates_basic::template', array(
+    'type_menu' => 'left',
+    'page' => $page,
+    'title' => $title,
+    'wysiwyg' => $wysiwyg,
+), false);

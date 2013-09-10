@@ -7,9 +7,6 @@
  *             http://www.gnu.org/licenses/agpl-3.0.html
  * @link http://www.novius-os.org
  */
-
-// Loading configs (see bootstrap.php)
-$config = \Nos\Templates\Basic\loadViewConfig();
 ?>
 <div class="horizontal_menu noprint">
     <?= \View::forge('noviusos_templates_basic::subviews/menu', $config['menu']) ?>

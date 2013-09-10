@@ -45,11 +45,12 @@ if ($type_menu === 'left') {
 } else {
     $view = 'noviusos_templates_basic::subviews/top_body';
 }
-$view = \View::forge($view);
-$view->set('page', $page, false);
-$view->set('title', $title, false);
-$view->set('wysiwyg', $wysiwyg, false);
-echo $view;
+echo \View::forge($view, array(
+    'page' => $page,
+    'title' => $title,
+    'wysiwyg' => $wysiwyg,
+    'config' => $config,
+), false);
 ?>
 
             <?= \View::forge('noviusos_templates_basic::subviews/footer') ?>

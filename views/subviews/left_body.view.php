@@ -7,9 +7,6 @@
  *             http://www.gnu.org/licenses/agpl-3.0.html
  * @link http://www.novius-os.org
  */
-
-// Loading configs (see bootstrap.php)
-$config = \Nos\Templates\Basic\loadViewConfig();
 ?>
 <div id="content">
     <div id="colleft" class="noprint">
