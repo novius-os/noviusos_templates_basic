@@ -9,7 +9,7 @@
  */
 
 echo \View::forge('noviusos_templates_basic::template', array(
-    'type_menu' => 'left',
+    'menu_type' => 'left',
     'page' => $page,
     'title' => $title,
     'wysiwyg' => $wysiwyg,

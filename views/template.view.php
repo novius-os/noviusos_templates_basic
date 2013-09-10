@@ -24,7 +24,7 @@ $config = \Nos\Templates\Basic\loadViewConfig();
     <!-- CSS -->
     <link rel="shortcut icon" href="static/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="static/apps/noviusos_templates_basic/css/base.css" media="all">
-    <link rel="stylesheet" type="text/css" href="static/apps/noviusos_templates_basic/css/<?= $type_menu ?>_menu.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/apps/noviusos_templates_basic/css/<?= $menu_type ?>_menu.css" media="all">
     <link rel="stylesheet" type="text/css" href="static/apps/noviusos_templates_basic/css/print.css" media="print">
     <!-- JS -->
     <!--  <script src="static/apps/noviusos_templates_basic/js/jquery.js" type="text/javascript"></script>
@@ -40,7 +40,7 @@ $config = \Nos\Templates\Basic\loadViewConfig();
             <?= \View::forge('noviusos_templates_basic::subviews/header', $config['global'] + array('current_context' => $page->get_context())) ?>
 
 <?php
-if ($type_menu === 'left') {
+if ($menu_type === 'left') {
     $view = 'noviusos_templates_basic::subviews/left_body';
 } else {
     $view = 'noviusos_templates_basic::subviews/top_body';
