@@ -14,3 +14,4 @@ tools:
         min_lines:            5
         # Minimum number of identical tokens (default: 70)
         min_tokens:           80
+    php_pdepend: true
