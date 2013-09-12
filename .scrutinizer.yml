@@ -9,9 +9,9 @@ tools:
         command: 'phpcs -n'
         config:
             standard: /tmp/noviusos.xml
+    php_pdepend: true
     php_cpd:
         # Minimum number of identical lines (default: 5)
-        min_lines:            5
+        min_lines: 5
         # Minimum number of identical tokens (default: 70)
-        min_tokens:           80
-    php_pdepend: true
+        min_tokens: 80
