@@ -15,3 +15,4 @@ echo \View::forge('noviusos_templates_basic::template', array(
     'wysiwyg' => $wysiwyg,
 ), false);
 
+
