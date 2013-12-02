@@ -10,7 +10,7 @@
 
 return array(
     'name'    => 'Novius OS default templates',
-    'version' => 'chiba.2.3',
+    'version' => 'chiba.2.3.1',
     'provider' => array(
         'name' => 'Novius OS',
     ),
