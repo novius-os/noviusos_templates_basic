@@ -7,18 +7,18 @@
 
 return array(
     #: views/subviews/page_contexts.view.php:24
-    'This page also exists in: {{contexts}}' => 'Cette page est également disponible en&nbsp;: {{contexts}}',
+    'This page also exists in: {{contexts}}' => 'Ti pagine anc existe in: {{contexts}}',
 
     #: views/subviews/footer.view.php:16
-    'Footer link' => 'Lien de bas de page',
+    'Footer link' => 'Ped ligator',
 
     #: views/subviews/footer.view.php:17
-    'Another footer link' => 'Un autre lien de bas de page',
+    'Another footer link' => 'Un altri ped ligator',
 
     #: views/subviews/footer.view.php:18
-    'Powered by Novius OS' => 'Propulsé par Novius OS',
+    'Powered by Novius OS' => 'Propulset per Novius OS',
 
     #: config/template.config.php:15
-    'My super website' => 'Mon super site',
+    'My super website' => 'Mi super web site',
 
 );
