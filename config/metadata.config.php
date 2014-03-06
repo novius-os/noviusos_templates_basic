@@ -10,7 +10,7 @@
 
 return array(
     'name'    => 'Novius OS default templates',
-    'version' => 'dubrovka',
+    'version' => '4.1 (Dubrovka)',
     'provider' => array(
         'name' => 'Novius OS',
     ),
