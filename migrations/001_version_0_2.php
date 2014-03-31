@@ -14,7 +14,7 @@ class Version_0_2 extends \Nos\Migration
 {
     public function up()
     {
-        $noviusos_template_variation = \Db::list_tables('noviusos_template_variation');
+        $noviusos_template_variation = \Db::list_tables('nos_template_variation');
         if (empty($noviusos_template_variation)) {
             parent::up();
         }
