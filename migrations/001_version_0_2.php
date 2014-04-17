@@ -12,4 +12,12 @@ namespace Nos\Templates\Basic\Migrations;
 
 class Version_0_2 extends \Nos\Migration
 {
+    public function up()
+    {
+        $noviusos_template_variation = \Db::list_tables('nos_template_variation');
+        if (empty($noviusos_template_variation)) {
+            // Not need this migration on a fresh install
+            parent::up();
+        }
+    }
 }
