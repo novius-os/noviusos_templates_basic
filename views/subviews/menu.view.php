@@ -13,54 +13,10 @@
 // $idParent: start level, null for root (default)
 
 if ($depth > 0) {
-    $pages = array();
-    $pages = findPages($idParent);
-
-    $current = \Nos\Nos::main_controller()->getPage()->page_id;
-
-    if (count($pages)) {
-        ?>
-        <ul class="nobullet" id="menu">
-        <?php
-        foreach ($pages as $p) {
-            $anchor = array('text' => e($p->pick('menu_title', 'title')));
-            $current == $p['id'] && $anchor['class'] = 'active';
-            echo '<li class="lvl0">', $p->htmlAnchor($anchor);
-            if ($depth > 1) {
-                $subpages = findPages($p['id']);
-                if (count($subpages)) {
-                    echo '<ul class="nobullet submenu">';
-                    foreach ($subpages as $sp) {
-                        $anchor = array('text' => e($sp->pick('menu_title', 'title')));
-                        $current == $sp['id'] && $anchor['class'] = 'active';
-                        echo '<li class="lvl1">', $sp->htmlAnchor($anchor), '</li>';
-                    }
-                    echo '</ul>';
-                }
-            }
-            echo '</li>';
-        }
-        echo '</ul>';
+    $tpvar = \Nos\Nos::main_controller()->getTemplateVariation();
+    $menu = $tpvar->menus->principal;
+    if (empty($menu)) {
+        $menu = \Nos\Menu\Model_Menu::buildFromPages(\Nos\Nos::main_controller()->getContext(), $idParent, $depth);
     }
-}
-
-function findPages($idParent = null)
-{
-    $where = array(
-        'page_parent_id' => $idParent,
-        'published'      => 1,
-        'page_menu'      => 1,
-        'page_context'   => \Nos\Nos::main_controller()->getPage()->page_context,
-    );
-
-    $pages = \Nos\Page\Model_Page::find('all', array(
-        'where'             => $where,
-        'order_by'          => array('page_sort' => 'asc')
-    ));
-
-    if (count($pages) > 0) {
-        return $pages;
-    } else {
-        return array();
-    }
+    echo $menu->html(array('view' => 'noviusos_templates_basic::subviews/menu_driver'));
 }
