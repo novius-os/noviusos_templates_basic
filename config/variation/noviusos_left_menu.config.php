@@ -34,9 +34,17 @@ return array(
         'fields' => array(
             'menus->principal->menu_id' => array(
                 'label' => __('Menu'),
-                'renderer' => 'Nos\Renderer_Select_Model',
+                'renderer' => 'Nos\Renderer_Item_Picker',
                 'renderer_options' => array(
                     'model' => 'Nos\Menu\Model_Menu',
+                    'appdesk' => 'admin/noviusos_menu/menu/appdesk',
+                    'defaultThumbnail' => 'static/apps/noviusos_menu/img/64/menu.png',
+                    'texts' => array(
+                        'empty' => __('No menu selected'),
+                        'add' => __('Pick a menu'),
+                        'edit' => __('Pick another menu'),
+                        'delete' => __('Unselect menu'),
+                    ),
                 ),
             ),
         ),
