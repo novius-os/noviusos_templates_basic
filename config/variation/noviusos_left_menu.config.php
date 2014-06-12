@@ -43,7 +43,7 @@ return array(
                         'empty' => __('No menu selected'),
                         'add' => __('Pick a menu'),
                         'edit' => __('Pick another menu'),
-                        'delete' => __('Unselect menu'),
+                        'delete' => __('Un-select this menu'),
                     ),
                 ),
             ),
