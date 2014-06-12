@@ -6,7 +6,7 @@ This Novius OS application provides two basic front-office to templates. They ar
 
 ## Requirements
 
-* ‘Basic templates’ runs on Novius OS Dubrovka.
+* ‘Basic templates’ runs on Novius OS Elche.
 
 ## Installation
 
